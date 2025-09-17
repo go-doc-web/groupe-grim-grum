@@ -1,5 +1,14 @@
 html {
   font-size: 62.5%;
+  @media (max-width: $breakpoint992) {
+    font-size: 60%;
+  }
+  @media (max-width: 768px) {
+    font-size: 55%;
+  }
+  @media (max-width: 375px) {
+    font-size: 45%;
+  }
 }
 
 // Container
@@ -36,6 +45,12 @@ body {
   &.dark {
     background: #242424;
   }
+}
+
+.section__title {
+  font-size: 3rem;
+  color: $white;
+  font-weight: 700;
 }
 
 // Animations
