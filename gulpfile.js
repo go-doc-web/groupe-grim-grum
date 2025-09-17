@@ -141,7 +141,7 @@ gulp.task("deploy", (done) => {
     "build",
     {
       branch: "gh-pages",
-      repo: "git@github.com:go-doc-web/face-masks-test.git",
+      repo: "git@github.com:go-doc-web/groupe-grim-grum.git",
     },
     (err) => {
       if (err) {
