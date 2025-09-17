@@ -53,6 +53,26 @@ body {
   font-weight: 700;
 }
 
+.btn {
+  color: $white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  background-color: $primery-color-btn;
+  transition: background-color 350ms;
+  box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.75);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primery-color-btn-accent;
+  }
+}
+
 // Animations
 // Fade
 @keyframes fade {
