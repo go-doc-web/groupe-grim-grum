@@ -6,7 +6,8 @@
   .container {
     padding: 2rem 0 0;
     background: $table-container-bg;
-    border-radius: 0.8rem;
+    border-radius: 1rem;
+    overflow: hidden;
   }
 
   &__title {
