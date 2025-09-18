@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Burger menu
+
   function burgerMenu() {
     const burger = document.querySelector(".burger");
     const menu = document.querySelector(".menu");
     const body = document.querySelector("body");
+
     burger.addEventListener("click", () => {
       if (!menu.classList.contains("active")) {
         menu.classList.add("active");
@@ -14,6 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
         burger.classList.remove("active");
         body.classList.remove("locked");
       }
+    });
+
+    const menuLinks = document.querySelectorAll(".menu__item-link");
+
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+        burger.classList.remove("active");
+        body.classList.remove("locked");
+      });
     });
 
     window.addEventListener("resize", () => {
