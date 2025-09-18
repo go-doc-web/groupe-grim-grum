@@ -70,6 +70,7 @@ p {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -328,9 +329,9 @@ body.dark {
   padding-top: 14rem;
   padding-bottom: 14rem;
   background-color: #8f8d8d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero__bg.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero__bg.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero__bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero__bg.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero__bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero__bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -341,7 +342,7 @@ body.dark {
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 4rem;
-  text-shadow: 0.1rem 0.1rem 0.4rem #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: -0.06em;
 }
 
@@ -350,14 +351,21 @@ body.dark {
 }
 
 .hero__content p {
-  text-shadow: 0.1rem 0.1rem 0.4rem #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   font-weight: 500;
   font-size: 1.6rem;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
 }
 
 .hero__content p + p {
   margin-top: 4rem;
+}
+
+.hero__content span {
+  font-weight: 700;
+  color: #4dd2ff;
 }
 
 .hero .btn {
@@ -443,6 +451,7 @@ body.dark {
 .concerts .table-btn {
   display: block;
   margin: 0 auto;
+  border-radius: 0.9rem;
 }
 
 .team {
@@ -500,9 +509,9 @@ body.dark {
 }
 
 .team__member {
-  padding: 2rem;
+  padding: 3rem;
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: auto;
 }
 
@@ -519,7 +528,7 @@ body.dark {
 
 .history__content p {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.3;
 }
 
@@ -529,11 +538,12 @@ body.dark {
 
 .history__image-wrapper {
   float: right;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-  width: 35vw;
-  height: 31vh;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+  width: 28vw;
+  height: 30vh;
   overflow: hidden;
+  border-radius: 0.8rem;
 }
 
 .history__image-wrapper img {
@@ -744,19 +754,15 @@ footer .footer__address-link {
   position: relative;
   cursor: pointer;
   color: inherit;
-  -webkit-transition: color 350ms, -webkit-transform 350ms;
-  transition: color 350ms, -webkit-transform 350ms;
-  -o-transition: transform 350ms, color 350ms;
-  transition: transform 350ms, color 350ms;
-  transition: transform 350ms, color 350ms, -webkit-transform 350ms;
+  -webkit-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
+  padding: 1rem 0;
 }
 
 footer .footer__address-link:hover,
 footer .footer__address-link:focus,
 footer .footer__address-link:active {
-  -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-          transform: scale(1.03);
   color: #f5d132;
 }
 
@@ -793,19 +799,15 @@ footer .footer__list-item {
   font-size: 1.3rem;
   font-weight: 500;
   position: relative;
-  -webkit-transition: color 350ms, -webkit-transform 350ms;
-  transition: color 350ms, -webkit-transform 350ms;
-  -o-transition: transform 350ms, color 350ms;
-  transition: transform 350ms, color 350ms;
-  transition: transform 350ms, color 350ms, -webkit-transform 350ms;
+  padding: 1.3rem 0;
+  -webkit-transition: color 350ms;
+  -o-transition: color 350ms;
+  transition: color 350ms;
 }
 
 footer .footer__list-item:hover,
 footer .footer__list-item:focus,
 footer .footer__list-item:active {
-  -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-          transform: scale(1.03);
   color: #f5d132;
 }
 
@@ -851,7 +853,7 @@ footer .footer__list-item:not(:last-child):after {
   padding: 25px;
   border-radius: 5px;
   height: auto;
-  width: 300px;
+  width: 40rem;
 }
 
 .modal__wrapper .modal__title {
@@ -884,7 +886,7 @@ footer .footer__list-item:not(:last-child):after {
 
 .modal__wrapper .ticket-form {
   background-color: #1c1c1c;
-  padding: 24px;
+  padding: 1.4rem;
   border-radius: 8px;
   width: 100%;
   margin: 0 auto;
@@ -1278,6 +1280,10 @@ footer .footer__list-item:not(:last-child):after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .modal__wrapper .modal {
+    width: 30rem;
   }
 }
 
