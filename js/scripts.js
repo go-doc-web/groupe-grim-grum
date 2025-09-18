@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const nameInput = document.getElementById("name");
+    const nameInput = document.getElementById("form-name");
     const emailInput = document.getElementById("email");
     const messageInput = document.getElementById("message");
 
