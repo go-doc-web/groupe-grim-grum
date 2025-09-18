@@ -8,7 +8,8 @@
 
   &__list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+
     gap: 8rem;
     @media (max-width: $breakpoint992) {
       flex-wrap: wrap;
@@ -32,8 +33,14 @@
   }
 
   &__img-wrapper {
-    flex: 0 1 auto;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
     img {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       display: block;
       height: 100%;
@@ -46,5 +53,6 @@
     padding: 2rem;
     color: $white;
     font-size: 1.6rem;
+    margin-top: auto;
   }
 }
