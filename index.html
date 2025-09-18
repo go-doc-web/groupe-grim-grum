@@ -16,6 +16,53 @@
   </head>
 
   <body class="main__body">
+    <!-- Modal-->
+    <!-- Modal -->
+<div class="modal__wrapper">
+  <div class="modal">
+    <div class="modal__close">x</div>
+    <div class="modal__title section__title"><span>Купити квитки</span></div>
+    <div class="modal__body">
+      <form class="ticket-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Ім'я</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="tickets" class="form-label">Кількість квитків</label>
+          <input
+            type="number"
+            id="tickets"
+            name="tickets"
+            class="form-input"
+            value="1"
+            min="1"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-button">Замовити квиток</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <!-- End of  Modal -->
     <!-- Header -->
     <header>
   <!-- Navbar -->
