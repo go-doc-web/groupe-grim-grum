@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Мобильное меню бургер
+  // Burger menu
   function burgerMenu() {
     const burger = document.querySelector(".burger");
     const menu = document.querySelector(".menu");
@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
     if (!triggers.length || !modal || !close) {
-      console.error(
-        "Не удалось найти все необходимые элементы для модального окна."
-      );
+      console.error("did not find elements of modal window");
       return;
     }
 

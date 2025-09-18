@@ -21,7 +21,8 @@ $primery-color-btn: #f82c56;
 $primery-color-btn-accent: #e70a36;
 
 // Shadow
-$textShadow: 0.1rem 0.1rem 0.4rem #000;
+// $textShadow: 0.1rem 0.1rem 0.4rem #000;
+$textShadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint992;

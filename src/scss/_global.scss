@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
   @media (max-width: $breakpoint992) {
     font-size: 60%;
   }
